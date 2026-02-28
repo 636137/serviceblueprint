@@ -1,0 +1,8 @@
+{
+  "name": "serviceblueprint",
+  "version": "1.0.0",
+  "description": "Service journey mapping and analysis",
+  "scripts": {
+    "dev": "cd backend && node server.js"
+  }
+}
