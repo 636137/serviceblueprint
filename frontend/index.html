@@ -339,7 +339,8 @@
         return;
       }
       
-      const res = await fetch('http://localhost:3009/api/analyze', {
+      const API_BASE = `${window.location.protocol}//${window.location.hostname}:3009/api`;
+      const res = await fetch(`${API_BASE}/analyze`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ serviceName, touchpoints })
@@ -448,7 +449,8 @@
         return;
       }
       
-      const res = await fetch('http://localhost:3009/api/journey', {
+      const API_BASE = `${window.location.protocol}//${window.location.hostname}:3009/api`;
+      const res = await fetch(`${API_BASE}/journey`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ serviceName, touchpoints })
@@ -459,7 +461,8 @@
     }
     
     async function loadTemplates() {
-      const res = await fetch('http://localhost:3009/api/templates');
+      const API_BASE = `${window.location.protocol}//${window.location.hostname}:3009/api`;
+      const res = await fetch(`${API_BASE}/templates`);
       const templates = await res.json();
       
       const div = document.getElementById('templateList');
@@ -473,7 +476,8 @@
     }
     
     async function loadTemplate(id) {
-      const res = await fetch(`http://localhost:3009/api/templates/${id}`);
+      const API_BASE = `${window.location.protocol}//${window.location.hostname}:3009/api`;
+      const res = await fetch(`${API_BASE}/templates/${id}`);
       const template = await res.json();
       
       document.getElementById('serviceName').value = template.name;
@@ -486,7 +490,8 @@
     }
     
     async function loadJourneys() {
-      const res = await fetch('http://localhost:3009/api/journeys');
+      const API_BASE = `${window.location.protocol}//${window.location.hostname}:3009/api`;
+      const res = await fetch(`${API_BASE}/journeys`);
       const journeys = await res.json();
       
       const div = document.getElementById('journeyList');
