@@ -6,6 +6,18 @@ This code is proprietary to **Maximus**. **No public license is granted**. See [
 
 # ServiceBlueprint - Enterprise Journey Mapping Platform
 
+## Repository Layout
+
+- `frontend/`
+- `backend/`
+- `infra/`
+
+## Local vs Deploy
+
+- Local: see `docs/how-to.md`
+- Deploy: see `infra/`
+
+
 **Professional customer journey mapping and analytics platform for government services**
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](http://serviceblueprint-1772257679.s3-website-us-east-1.amazonaws.com)
