@@ -1,3 +1,9 @@
+## Proprietary Notice
+
+This code is proprietary to **Maximus**. **No public license is granted**. See [`NOTICE`](./NOTICE).
+
+---
+
 # ServiceBlueprint - Enterprise Journey Mapping Platform
 
 **Professional customer journey mapping and analytics platform for government services**

@@ -16,7 +16,7 @@
     "cx-analytics"
   ],
   "author": "Government CX Team",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.18.0",
     "cors": "^2.8.5"
